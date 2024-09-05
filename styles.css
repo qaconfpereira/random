@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e1e5f2; /* Fondo de la página */
+    font-family: Arial, sans-serif;
+  }
+  
+  #logo {
+    width: 600px;
+    height: 400px;
+    position: relative;
+  }
+  
+  #logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));  /* Bordes difuminados */
+  }
+  
+  #randomNumber {
+    margin-top: 20px;
+    width: 250px;
+    height: 120px;
+    background-color: #012a4a; /* Fondo de los números */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    font-family: 'DS-Digital', sans-serif;
+    letter-spacing: 5px;
+    color: white; /* Números en blanco */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  #buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 350px;
+  }
+  
+  button {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #012a4a;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #2c7da0;
+    color: white;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  

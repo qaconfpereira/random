@@ -4,21 +4,21 @@ const resetBtn = document.getElementById('reset');
 let timer;
 
 function getRandomNumber() {
-  return Math.floor(Math.random() * 150) + 1;
+  return Math.floor(Math.random() * 40) + 1;
 }
 
 function displayRandomNumber() {
-  let totalTime = 5000; // 5 segundos totales
+  let totalTime = 3000; // 3 segundos totales
   let intervalTime = 100; // Intervalos rápidos de 100ms
 
   function showRandomNumbers() {
     randomNumberDisplay.textContent = ('00' + getRandomNumber()).slice(-3);
   }
 
-  // Animación continua cada 100ms por 5 segundos
+  // Animación continua cada 100ms por 3 segundos
   timer = setInterval(showRandomNumbers, intervalTime);
 
-  // Detener animación después de 5 segundos y mostrar el número final en rojo
+  // Detener animación después de 3 segundos y mostrar el número final en rojo
   setTimeout(() => {
     clearInterval(timer);
     let finalNumber = ('00' + getRandomNumber()).slice(-3);

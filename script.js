@@ -4,7 +4,7 @@ const resetBtn = document.getElementById('reset');
 let timer;
 
 function getRandomNumber() {
-  return Math.floor(Math.random() * 40) + 1;
+  return Math.floor(Math.random() * 77) + 1;
 }
 
 function displayRandomNumber() {
